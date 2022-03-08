@@ -1,0 +1,146 @@
+.menu-burger {
+	// .menu-burger__btn
+	visibility: hidden;
+	opacity: 0;
+	z-index: -1;
+
+	.header__logo {
+		display: block;
+		margin: 0;
+		margin-bottom: 50px;
+	}
+
+	//Form for menu
+	.header {
+		// .header__serch-form
+		&__serch-form {
+			display: flex;
+			justify-self: flex-end;
+			margin-bottom: 20px;
+		}
+		// .header__serch-input
+		&__serch-input {
+			max-width: 150px;
+		}
+		// .header__serch-button
+		&__serch-button {
+			margin-right: 15px;
+		}
+		// .header__serch-icon
+		&__serch-icon {
+		}
+	}
+
+	&__btn {
+		display: block;
+		height: 26px;
+		width: 32px;
+		position: absolute;
+		top: 17px;
+		left: 20px;
+		z-index: 100;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		span {
+			display: block;
+			height: 4px;
+			width: 100%;
+			border-radius: 10px;
+			background: $white;
+		}
+
+		.line_1 {
+			transform-origin: 0% 0%;
+			transition: transform 0.4s ease-in-out;
+		}
+		.line_2 {
+			transition: transform 0.2s ease-in-out;
+		}
+		.line_3 {
+			transform-origin: 0% 100%;
+			transition: transform 0.4s ease-in-out;
+		}
+	}
+	.active {
+		.line_1 {
+			transform: rotate(45deg);
+		}
+		.line_2 {
+			transform: scaleX(0);
+		}
+		.line_3 {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.menu-burger {
+	// .menu-burger__nav-bar
+
+	&__nav-bar {
+		overflow: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: $black;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 70px;
+		padding-bottom: 20px;
+		text-align: center;
+		display: flex;
+		visibility: hidden;
+		z-index: -1;
+
+		// TO DO сделать анимацию из js (баг)
+		animation: 0.4s both menuAnimateHide;
+
+		&.active {
+			visibility: visible;
+			z-index: 90;
+			animation: 1s both menuAnimate;
+			overflow: scroll;
+		}
+
+		.header__serch-form {
+			display: block;
+		}
+	}
+	// .menu-burger__list
+	&__list {
+		font-size: 18px;
+	}
+	// .menu-burger__item
+	&__item {
+		margin-bottom: 7px;
+	}
+	// .menu-burger__link
+	&__link {
+	}
+}
+
+@keyframes menuAnimate {
+	0% {
+		top: -300px;
+		opacity: 0;
+	}
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes menuAnimateHide {
+	0% {
+		visibility: visible;
+	}
+	100% {
+		top: -300px;
+		opacity: 0;
+		z-index: -1;
+		visibility: hidden;
+	}
+}

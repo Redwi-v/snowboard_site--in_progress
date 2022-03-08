@@ -1,0 +1,95 @@
+@import './media/footerM.scss';
+
+.footer {
+	background-color: $black;
+	color: $white;
+	padding: 75px 0 60px 0;
+	// .footer__wraper
+	&__wraper {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 70px;
+	}
+	// .footer__colum
+	&__colum {
+		height: 100%;
+	}
+	// .footer__title
+	&__title {
+		font-size: 17px;
+		font-family: $extraBold;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+	}
+	// .footer__list
+	&__list {
+	}
+	// .footer__item
+	&__item {
+		&:not(:last-child) {
+			padding-bottom: 15px;
+		}
+	}
+	// .footer__link
+	&__link {
+		font-size: 14px;
+		font-family: $regular;
+	}
+	// .footer__form
+	&__form {
+		display: flex;
+		width: 225px;
+	}
+	// .footer__input
+	&__input {
+		padding: 15px 10px;
+		width: 100%;
+	}
+	// .footer__button
+	&__button {
+		padding: 15px 18px;
+		background-color: $gray;
+		color: $black;
+		font-family: $extraBold;
+		text-transform: uppercase;
+	}
+	// .footer__social-networks
+	&__social-networks {
+		padding-top: 60px;
+		display: flex;
+	}
+	// .footer__social-network
+	&__social-network {
+		margin-right: 20px;
+	}
+	// .footer__network-link
+	&__network-link {
+	}
+	// .footer__network-icon
+	&__network-icon {
+	}
+	// .footer__after
+	&__after {
+		display: flex;
+		justify-content: space-between;
+	}
+	// .footer__licension
+	&__licension {
+	}
+	// .footer__flag
+	&__flag {
+		display: block; // для выравниваня по flex
+	}
+	// .footer__cage-region
+	&__change-region {
+		display: flex;
+		align-items: center;
+	}
+
+	&__region {
+		margin-left: 10px;
+	}
+
+	&__title_form {
+	}
+}

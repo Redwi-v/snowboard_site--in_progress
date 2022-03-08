@@ -1,0 +1,39 @@
+<header class="header">
+	<div class="container header__wraper">
+		<img class="header__logo" src="./img/icons_and_logo/logo.png" alt="logo" "> @@include('components/menuBurger.html')
+		<nav class="header__nav-bar">
+			<ul class="header__nav-lsit">
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#">shop</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#">team</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#">events</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#">experience</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#">company</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#">contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<ul class="header__interfase">
+			@@include('components/headerSerchForm.html')
+
+			<a class="header__basket" href="#">
+				<img class="header__basket-icon" src="./img/icons_and_logo/shopping_bag_icon.png" alt="basket-icon" />
+			</a>
+
+			<button class="header__balance">
+				<input class="header__number-input" type="number" readonly value="120000" />
+			</button>
+		</ul>
+	</div>
+</header>

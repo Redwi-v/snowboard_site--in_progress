@@ -1,0 +1,13 @@
+@import 'mixins';
+
+@import 'fonts';
+@import 'google_fonts';
+@import 'settings';
+@import 'vars';
+@import 'globalStyles';
+
+@import '__header';
+@import '__footer';
+@import '__main';
+
+@import './componentsStyles/menuBurgerStyles.scss';

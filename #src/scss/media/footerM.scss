@@ -1,0 +1,33 @@
+@media (max-width: 811px) {
+	.footer {
+		padding: 30px 0 30px 0;
+
+		&__wraper {
+			flex-direction: column;
+			padding-bottom: 40px;
+		}
+
+		&__title {
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+
+		&__list {
+			overflow: hidden;
+			max-height: 0;
+			transition: max-height 0.2s;
+
+			&.active {
+				margin-bottom: 30px;
+			}
+		}
+
+		&__title_form {
+			margin-top: 30px;
+		}
+
+		&__social-networks {
+			padding-top: 20px;
+		}
+	}
+}
