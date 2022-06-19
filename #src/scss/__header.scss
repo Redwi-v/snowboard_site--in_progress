@@ -4,18 +4,10 @@
 	background-color: $black;
 	color: $white;
 	min-height: 110px;
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
+
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-
-	transition: transform 0.4s;
-	.header_hidden {
-		transform: translateY(-100%);
-	}
 
 	// .header__wraper
 	&__wraper {

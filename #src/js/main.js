@@ -1,7 +1,7 @@
 import './webp-test';
 import './header/search';
 import './header/menuBurger';
-import './header/headerHidden';
+import './sliders';
 
 class CreateAcardionSet {
 	constructor(id, singleMode = false) {
